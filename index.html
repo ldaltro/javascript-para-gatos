@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>JavaScript for Cats</title>
+    <title>JavaScript para Gatos</title>
 
     <link rel="stylesheet" href="stylesheets/style.css">
     <link rel="stylesheet" href="stylesheets/rainbow.github.css">
@@ -23,120 +23,109 @@
 <div class="content-preview-wrapper">
 <div class="content-preview">
 <div class="post-content" style="white-space: normal;">
-  <p><span class="bigTitle">JavaScript For Cats</span></p>
-  <h2><span class="header-text">An introduction for new programmers</span><img src="images/substack-cats.png" alt="cat" class="right"></h2>
+  <p><span class="bigTitle">JavaScript para Gatos</span></p>
+  <h2><span class="header-text">Uma introdução para novos programdores</span><img src="images/substack-cats.png" alt="cat" class="right"></h2>
 
 
-<h3><em>So easy your human companion could do it too!</em></h3>
+<h3><em>Tão fácil que seu companheiro humano também pode ler também!</em></h3>
 
-  <p>JavaScript is a programming language or, in other words, a means by which
-    a computer is instructed to do things. Just the same as one controls humans
-    with hisses and meows, one controls computers with statements written in
-    a programming language. All web browsers understand JavaScript and you
-    can take advantage of that to make web pages do crazy things!</p>
-  <p>JavaScript started as a programming language to make internet pages more
-    interactive. Nowadays JavaScript runs in more places than just web browsers
-    — it runs on web servers, phones and <a href="http://jsfiddle.net/rwaldron/WZkn5/show/light/">even robots</a>!
-    This page will teach you some JavaScript basics so that you can get up
-    and running in no time*!</p>
-  <p>* <em>actual time: more than none. Probably an hour or two. Also since you are a cat you are less likely to run and more likely to lay around in the sun</em></p>
+  <p>JavaScript é uma lingaguem de programação, em outras palavras, uma maneira de ensinar o computador a fazer coisas. Assim como você
+    controla os humanos com miaus, é possivel controlar computadores com declarações escritas em uma linguagem de programação. Todos os browsers entendem JavaScript e você
+   pode tirar vantagem disso fazer sites e qualquer outro tipo de coisa maluca!</p>
+  <p>JavaScript começou como uma linguagem de programação para tornar a web mais interativa. Hoje em dia ela roda em mais lugares do que nos browsers
+    — ela roda em web servers, celulares e <a href="http://jsfiddle.net/rwaldron/WZkn5/show/light/">até robôs</a>!
+    Esta páginar vai ter ensinar o básico de JavaScript pra que você possa manjar dos paranauês agora mesmo*!
+  </p>
+  <p>* <em>agora mesmo: mais do que nesse exato momento. Provavelmente uma hora ou duas. Mas como você é um gato é pouco provável que você precise sair por aí pra pegar um sol.</em></p>
 
   </p>
 
-<h2>Table of contents</h2>
+<h2>Sumário</h2>
 
   <ul>
-    <li><a href="#basics">The console</a>
+    <li><a href="#basics">O console</a>
     </li>
     <li><a href="#strings">Strings</a>
     </li>
-    <li><a href="#values">Values and variables</a>
+    <li><a href="#values">Valores e variáveis</a>
     </li>
-    <li><a href="#functions">Using functions</a>
+    <li><a href="#functions">Usando funções</a>
     </li>
-    <li><a href="#standard-library">Built in JS functions</a>
+    <li><a href="#standard-library">Funções Built do JS </a>
     </li>
-    <li><a href="#third-party-javascript">Download new JS functions</a>
+    <li><a href="#third-party-javascript">Baixe novas funções JS</a>
     </li>
-    <li><a href="#writing-functions">Writing new functions</a>
+    <li><a href="#writing-functions">Escrevendo novas funções</a>
     </li>
     <li><a href="#loops">Loops</a>
     </li>
     <li><a href="#arrays">Arrays</a>
     </li>
-    <li><a href="#objects">Objects</a>
+    <li><a href="#objects">Objetos</a>
     </li>
-    <li><a href="#recommended-reading">Recommended reading</a>
+    <li><a href="#recommended-reading">Leitura Recomendada</a>
     </li>
   </ul>
-  <p>If you don't want to read it all now <a href="javascript-for-cats.pdf">here is a PDF version</a> you
-    can keep for later.</p>
+  <p>Se você não tiver afim de ler tudo agora <a href="javascript-for-cats.pdf">aqui está uma versão em PDF</a> você 
+    pode deixar pra depois.</p>
 
-<h2>Don't be a scaredy-cat</h2>
+<h2>Não seja um gatinho medroso</h2>
 
-  <p><span class="right"><img src="images/yarnify.png" alt="cat"></span>You
-    will always land on your feet — even when programming! Unlike <a href="images/dealwithit.gif">pawing over a glass of water</a> on
-    your laptop, <em>nothing</em> in these tutorials will damage your computer
-    in any way, even if you mistype a command or click the wrong button. Unlike
-    cats, computer programmers make mistakes all time: misspelling things,
-    forgetting quotes or brackets, and being forgetful of how basic functions
-    (and yarn) work. Programmers care more about making it work <em>eventually</em> rather
-    than trying to make it work the very first time. The best way to learn
-    is by making mistakes!</p>
-  <p>So don't be a scaredy-cat! The absolute worst thing that will happen is
-    that you might have to refresh this page in your web browser if you get
-    stuck. Don't worry though, this will happen very rarely — and we're talkin'
-    13-toed cat rare.</p>
+  <p><span class="right"><img src="images/yarnify.png" alt="cat"></span>Você
+    sempre vai colocar as suas patas — mesmo quando tiver programando! Ao contrário de <a href="images/dealwithit.gif">em um copo d'água</a> no
+    seu notebook, <em>nada</em> nesse tutorial vai danificar o seu computador
+    de jeito nenhum,mesmo que você escreva algum comando errado,ou clique onde não deve. Ao contrário de
+    gatos, programadores cometem erros toda hora: escrevem coisas errado,
+    esquecem das aspas ou chaves, e esquecem o funcionamento de funções básicas. Programadores se importam mais em fazer alguma coisa que funcione <em>de vez em quando</em> do que
+    tentar fazer funcionar toda hora. A melhor forma de aprender é
+    cometer erros!</p>
+  <p>Então não seja um gatinho medroso! O pior que pode acontecer é precisar recarregar a página do seu navegador
+    .mas relaxa, isso vai ser muito dificil de acontecer.</p>
 
-<h2><a id="basics" href="#basics">#</a> The basics</h2>
+<h2><a id="basics" href="#basics">#</a> O básico</h2>
 
-  <p>There is JavaScript running on this page right now! Let's play around
-    with it a little. For the sake of simplicity I'll assume you are using
-    Google Chrome to read this page (if you aren't it's probably easier on
-    both of us if you follow along with Chrome).</p>
-  <p>First, right click anywhere on the screen and hit <strong>Inspect Element</strong>,
-    then click on the <strong>Console</strong> tab. You should see a thingy that
-    looks like this:</p>
+  <p>Existe um monte de javascript rodando no seu navegador agora mesmo! Vamos brincar com isso um pouco. 
+    Para facilitar as coisas, eu vou imaginar que você está usando o Google Chrome
+    pra ler esse tutorial (Se não é o seu caso,sua vida vai ser muito mais fácil se você instalar o Chrome).</p>
+  <p>Primeiro, clique com o botão direito de mouse em qualquer lugar da tela e vá para <strong>Inspecionar Elemento</strong>,
+    depois clique em <strong>Console</strong>.Vai aparecer uma parada mais ou menos assim:</p>
   <p>
     <img src="images/console.png" alt="console">
   </p>
-  <p>This is a console, otherwise known as a "command line" or "terminal".
-    Basically its a way to type one thing at a time into a computer and immediately
-    get the computer's answer back. They are super useful as a learning tool
-    (I still use the console nearly every day that I'm coding).</p>
-  <p>The console does some pretty cool stuff. Here I have started to type something
-    and the console is helping me out by giving me a list of all the possible
-    things I could continue to type! Another thing you could do is type
+  <p>Este é o console, também conhecido como "linha de comando" ou "terminal".
+    Basicamente é um jeito de digitar uma coisa de cada vez no computador e receber uma resposta dele imediatamente. 
+    Eles são uma ferramenta super útil para aprender coisas novas
+    (Eu uso quase todo dia quando tô codando).</p>
+  <p>O console faz algumas coisas bem legais.Aqui eu digitei alguma coisa e o console me indicou todas as outras coisas que eu podia digitar! 
+    Outra coisa que você pode fazer é digitar
     <code
     data-language="javascript" class="rainbow"><span class="constant numeric">1</span>  <span class="keyword operator">+</span> 
       <span
       class="constant numeric">1</span>
-        </code>into the console and then hit the <code data-language="javascript" class="rainbow">Enter</code> key
-        and watch what happens.</p>
-  <p>Using the console is a very important part of learning JavaScript. If
-    you don't know if something works or what the command is for something,
-    go to the console and figure it out! Here's an example:</p>
+        </code>no console e apertar <code data-language="javascript" class="rainbow">Enter</code> 
+        para ver o que acontece.</p>
+  <p>Usar o console é uma parte muito importante para aprender JavaScript. Se
+    você não sabe se alguma coisa funciona ou se tal comando faz tal coisa o console vai ter ajudar a descobrir! Olha esse exemplo:</p>
 
 <h3><a id="strings" href="#strings">#</a> Strings</h3>
 
-  <p>Since I am a cat I want to replace every instance of the word <code data-language="javascript"
-    class="rainbow">dog</code> on the Internet with <code data-language="javascript"
-    class="rainbow">those blasted dogs</code>. First go into your console and
-    type in a few sentences that contain the word <code data-language="javascript"
-    class="rainbow">dog</code> at least once. In JavaScript a bunch of letters,
-    numbers, words or anything else is known as a <strong>String</strong> (as
-    in a <em>string</em> of characters). Strings have to begin AND end with a
-    quotation mark. Single <code data-language="javascript" class="rainbow">'</code> or
-    double <code data-language="javascript" class="rainbow">"</code> is fine,
-    just make sure you use the same at the beginning as you do at the end.</p>
+  <p>Como eu sou um gato eu quero substituir toda ocorrência da palavra <code data-language="javascript"
+    class="rainbow">cachorro</code> na Internet com <code data-language="javascript"
+    class="rainbow">esses malditos cachorros</code>. Primeiro vamos pro nosso console
+    e digitamos algumas frases que contem a palavra <code data-language="javascript"
+    class="rainbow">cachorro</code> pelo menos uma vez. Em JavaScript um monte de letras,
+    numeros, palavras ou qualquer outra coisa é conhecido como <strong>String</strong> ("cadeia"- em inglês- como
+    em a <em>string</em> of characters - uma cadeia de caracteres-). Strings devemcomeçar E terminar com aspas
+    . Simples <code data-language="javascript" class="rainbow">'</code> ou
+    duplas <code data-language="javascript" class="rainbow">"</code> funcionam,
+    só tenha certeza de que a que você colocou no começo é igual a que você colocou no final.</p>
   <p>
     <img src="images/console-strings.png" alt="console">
   </p>
-  <p>See the nasty error message? Don't worry - you didn't break any laws.
-    SyntaxError ILLEGAL is just the way it sounds when robots tell you that
-    your program has a problem. The first two sentences had matching quotation
-    marks at the beginning and end, but when I mixed single and double quotation
-    marks it freaked out on me.</p>
+  <p>Tá vendo esse erro nojento? Relaxa - voc~e n]ao quebrou nenhuma lei.
+    SyntaxError ILLEGAL é o jeito que os roboôs tem para te dizer que o programa está errado. 
+    As primeiras duas frases tinham aspas do mesmo tipo no começo e no fim mas
+    quando eu misturei os tipos o browser ficou muito puto comigo.</p>
   <p>OK, to fix up one of these sentences (by replacing <code data-language="javascript"
     class="rainbow">dog</code> with our enhanced version) we have to first save
     the original sentence so that we can call it up later when we do our replacing
