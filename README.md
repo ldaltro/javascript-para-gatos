@@ -1,4 +1,4 @@
-Introducção a programação em javascript para gatos
+Introdução a programação em javascript para gatos
 
                                  _
                                 | \
