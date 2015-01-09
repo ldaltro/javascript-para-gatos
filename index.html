@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="stylesheets/style.css">
     <link rel="stylesheet" href="stylesheets/rainbow.github.css">
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -66,7 +66,7 @@
     <li><a href="#recommended-reading">Leitura Recomendada</a>
     </li>
   </ul>
-  <p>Se você não tiver afim de ler tudo agora <a href="javascript-for-cats.pdf">aqui está uma versão em PDF</a> você 
+  <p>Se você não tiver afim de ler tudo agora <a href="javascript-for-cats.pdf">aqui está uma versão em PDF</a> você
     pode deixar pra depois.</p>
 
 <h2>Não seja um gatinho medroso</h2>
@@ -84,7 +84,7 @@
 
 <h2><a id="basics" href="#basics">#</a> O básico</h2>
 
-  <p>Existe um monte de javascript rodando no seu navegador agora mesmo! Vamos brincar com isso um pouco. 
+  <p>Existe um monte de javascript rodando no seu navegador agora mesmo! Vamos brincar com isso um pouco.
     Para facilitar as coisas, eu vou imaginar que você está usando o Google Chrome
     pra ler esse tutorial (Se não é o seu caso,sua vida vai ser muito mais fácil se você instalar o Chrome).</p>
   <p>Primeiro, clique com o botão direito de mouse em qualquer lugar da tela e vá para <strong>Inspecionar Elemento</strong>,
@@ -93,16 +93,16 @@
     <img src="images/console.png" alt="console">
   </p>
   <p>Este é o console, também conhecido como "linha de comando" ou "terminal".
-    Basicamente é um jeito de digitar uma coisa de cada vez no computador e receber uma resposta dele imediatamente. 
+    Basicamente é um jeito de digitar uma coisa de cada vez no computador e receber uma resposta dele imediatamente.
     Eles são uma ferramenta super útil para aprender coisas novas
     (Eu uso quase todo dia quando tô codando).</p>
-  <p>O console faz algumas coisas bem legais.Aqui eu digitei alguma coisa e o console me indicou todas as outras coisas que eu podia digitar! 
+  <p>O console faz algumas coisas bem legais.Aqui eu digitei alguma coisa e o console me indicou todas as outras coisas que eu podia digitar!
     Outra coisa que você pode fazer é digitar
     <code
-    data-language="javascript" class="rainbow"><span class="constant numeric">1</span>  <span class="keyword operator">+</span> 
+    data-language="javascript" class="rainbow"><span class="constant numeric">1</span>  <span class="keyword operator">+</span>
       <span
       class="constant numeric">1</span>
-        </code>no console e apertar <code data-language="javascript" class="rainbow">Enter</code> 
+        </code>no console e apertar <code data-language="javascript" class="rainbow">Enter</code>
         para ver o que acontece.</p>
   <p>Usar o console é uma parte muito importante para aprender JavaScript. Se
     você não sabe se alguma coisa funciona ou se tal comando faz tal coisa o console vai ter ajudar a descobrir! Olha esse exemplo:</p>
@@ -123,34 +123,33 @@
     <img src="images/console-strings.png" alt="console">
   </p>
   <p>Tá vendo esse erro nojento? Relaxa - voc~e n]ao quebrou nenhuma lei.
-    SyntaxError ILLEGAL é o jeito que os roboôs tem para te dizer que o programa está errado. 
+    SyntaxError ILLEGAL é o jeito que os roboôs tem para te dizer que o programa está errado.
     As primeiras duas frases tinham aspas do mesmo tipo no começo e no fim mas
     quando eu misturei os tipos o browser ficou muito puto comigo.</p>
   <p>OK, para corrigir algumas dessas frases (substituindo <code data-language="javascript"
     class="rainbow">cachorro</code> com a nossa verão melhorada) nós precisamos primeiro salvar
     a frase original assim a gente pode chama-la depois e fazer a mágica da substitu
-    . Percebeu que as strings se repetem em vermelho quando a gente digita no console? 
+    . Percebeu que as strings se repetem em vermelho quando a gente digita no console?
     Isso acontece porque a gente não pediu para salva-las em lugar nenhum
     então ele só te dá o texto de volta (ou uma mensagem de erro se você fez alguma bobagem).</p>
 
-<h3><a id="values" href="#values">#</a> Values and variables</h3>
+<h3><a id="values" href="#values">#</a>Valores e variáveis</h3>
 
-  <p><strong>Values</strong> are the simplest components in JavaScript.
+  <p><strong>Valores</strong> são os componentes mais simples do JavaScript.
     <code
     data-language="javascript" class="rainbow"><span class="constant numeric">1</span>
-      </code>is a value, <code data-language="javascript" class="rainbow"><span class="constant language">true</span></code> is
-      a value, <code data-language="javascript" class="rainbow">"hello"</code> is
-      a value, <code data-language="javascript" class="rainbow"><span class="keyword">function</span>() {}</code> is
-      a value, the list goes on! There are a handful of different <strong>types</strong> of
-      values in JavaScript but we don't need to go over them all right away —
-      you will learn them naturally the more you code!</p>
-  <p>To store values we use things called <strong>variables</strong>. The word
-    'variable' means 'can change' and is used because variables can store many
-    different types of values and can change their value many times. They are
-    pretty much like mailboxes. We put something in a variable, like our sentence,
-    and then give the variable an address that we can use to look up the sentence
-    later. In real life mailboxes have to have PO Box numbers but in JavaScript
-    you usually just use lowercase letters or numbers without any spaces.</p>
+  </code>é um valor, <code data-language="javascript" class="rainbow"><span class="constant language">true</span></code> é
+      um valor, <code data-language="javascript" class="rainbow">"hello"</code> é
+      um valor, <code data-language="javascript" class="rainbow"><span class="keyword">function</span>() {}</code> é
+      um valor, e por aí vai! Existem uma série de <strong>tipos</strong> de
+      valores em JavaScript mas nós não precisamos ver todos eles agora —
+      você vai acabar aprendendo todos a medida em que programa!</p>
+  <p>Para armazenar valores nós usamos coisas chamadas <strong>variáveis</strong>. A palavra
+    'variável' quer dizer 'pode ser modificado' e é usada porque variáveis podem guardar muitos
+    valores até mesmo se eles tiverem tipos diferentes. Elas são
+    meio como caixas postais.A gente coloca alguma coisa numa variável, tipo nossa frase,
+    e aí a gente dá um edereço pra essa variável para que seja possivel ler a frase depois. Na vida real
+    caixas de correio tem um CEP mas em Javascript nós geralmente temos letras minusculas ou numeros.</p>
   <p>
     <img src="images/console-variables.png" alt="console">
   </p>
@@ -490,7 +489,7 @@ _.<span class="function call">times</span>(<span class="constant numeric">10</sp
   {
     date: <span class="string">"10/20/2012"</span>,
     mood: <span class="string">"catnipped"</span>
-  }, 
+  },
   {
     date: <span class="string">"10/21/2012"</span>,
     mood: <span class="string">"nonplussed"</span>
@@ -532,7 +531,7 @@ _.<span class="function call">times</span>(<span class="constant numeric">10</sp
     getting started (cats are not known for their attention spans), but if
     you feel like you need to dive in deeper then check these out:</p>
   <ul>
-    
+
     <li><a href="http://nodeschool.io/">NodeSchool.io</a> is a community driven, open source educational software that teaches various node.js and JavaScript skills in an interactive, self-guided format. I helped make NodeSchool! Sadly it features less cats than this page.</a>
     </li>
     <li><a href="http://eloquentjavascript.net/">Eloquent Javascript</a> is a free
